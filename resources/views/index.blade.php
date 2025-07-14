@@ -13,8 +13,8 @@
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
                                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown">State-of-the-Art Facilities, Endless Possibilities</h5>
-                                <h1 class="display-3 text-white animated slideInDown">ReelCraft Academy—Where Creativity Thrives</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Craft your vision with cutting-edge technology, collaborative spaces, and the guidance of seasoned industry professionals.</p>
+                                <h1 class="display-3 text-white animated slideInDown">Multi Cloud DR Testing</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Multi Cloud DR Testing with Azure and GCP</p>
                                 <a href="{{ route('about') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
                                 <a href="{{ route('join_now') }}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
                             </div>
@@ -28,9 +28,9 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Moving Castle Creations Workshop</h5>
-                                <h1 class="display-3 text-white animated slideInDown">Dive Into the Magic of 3D Animation – Moving Castle Creations</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Join our December workshop to learn the art of animation and create your own moving masterpiece.</p>
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">DUMMY WEBSITE WITH LARAVEL</h5>
+                                <h1 class="display-3 text-white animated slideInDown">DUMMY WEBSITE WITH LARAVEL</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">DUMMY WEBSITE WITH LARAVEL</p>
                                 <a href="{{ route('about') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
                                 <a href="{{ route('join_now') }}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
                             </div>
@@ -45,9 +45,9 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Course Selection Banner</h5>
-                                <h1 class="display-3 text-white animated slideInDown">Choose Your Movie-Making Journey</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Browse through our range of specialized courses and book your spot today!</p>
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">DUMMY WEBSITE WITH LARAVEL</h5>
+                                <h1 class="display-3 text-white animated slideInDown">DUMMY WEBSITE WITH LARAVEL</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">DUMMY WEBSITE WITH LARAVEL</p>
                                 <a href="{{ route('about') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
                                 <a href="{{ route('join_now') }}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
                             </div>
@@ -69,8 +69,8 @@
                 <div class="service-item text-center pt-3 h-100">
                     <div class="p-4">
                         <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-                        <h5 class="mb-3">Best Instructors</h5>
-                        <p>Exceptional instructors who are highly knowledgeable, patient, and passionate about teaching.</p>
+                        <h5 class="mb-3">DUMMY WEBSITE WITH LARAVEL</h5>
+                        <p>DUMMY WEBSITE WITH LARAVEL</p>
                     </div>
                 </div>
             </div>
@@ -79,8 +79,8 @@
                 <div class="service-item text-center pt-3 h-100">
                     <div class="p-4">
                         <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                        <h5 class="mb-3">Online Classes</h5>
-                        <p>Convenient and well-structured online classes that provide flexibility without compromising quality.</p>
+                        <h5 class="mb-3">DUMMY WEBSITE WITH LARAVEL</h5>
+                        <p>DUMMY WEBSITE WITH LARAVEL</p>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                     <div class="p-4">
                         <i class="fa fa-3x fa-home text-primary mb-4"></i>
                         <h5 class="mb-3">Home Projects</h5>
-                        <p>Home projects are a fantastic way to apply what we've learned and reinforce concepts.</p>
+                        <p>HDUMMY WEBSITE WITH LARAVEL</p>
                     </div>
                 </div>
             </div>
@@ -99,8 +99,8 @@
                 <div class="service-item text-center pt-3 h-100">
                     <div class="p-4">
                         <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
-                        <h5 class="mb-3">Book Library</h5>
-                        <p>The book library is an excellent resource, offering a diverse collection of materials.</p>
+                        <h5 class="mb-3">DUMMY WEBSITE WITH LARAVEL</h5>
+                        <p>DUMMY WEBSITE WITH LARAVEL</p>
                     </div>
                 </div>
             </div>
@@ -121,27 +121,27 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
-                    <h1 class="mb-4">Welcome to Reelcraft Academy</h1>
-                    <p class="mb-4" style="text-align: justify;">Reelcraft Academy is a premier institution dedicated to nurturing creativity and innovation in the art of storytelling through film and media. With a focus on hands-on learning and real-world experience, we offer comprehensive programs designed to equip aspiring filmmakers, writers, and digital creators with the tools they need to bring their visions to life. Our curriculum spans every aspect of the filmmaking process, from scriptwriting and cinematography to editing and post-production, ensuring our students develop a well-rounded skill set. At Reelcraft Academy, we blend traditional techniques with cutting-edge technology, empowering students to explore and push the boundaries of modern storytelling.</p>
+                    <h1 class="mb-4">DUMMY WEBSITE WITH LARAVEL</h1>
+                    <p class="mb-4" style="text-align: justify;">DUMMY WEBSITE WITH LARAVEL</p>
                     <!-- <p class="mb-4" style="text-align: justify;">Our vibrant community of passionate educators and industry professionals fosters a collaborative and inspiring environment where creativity thrives. Students benefit from access to state-of-the-art facilities, expert mentorship, and networking opportunities with leaders in the media industry. Whether you're an aspiring director, a budding screenwriter, or a visionary editor, Reelcraft Academy provides a supportive platform to develop your talents and make your mark in the world of film and digital media. Join us and become part of a legacy that shapes the storytellers of tomorrow.</p> -->
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>DUMMY WEBSITE WITH LARAVEL</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>DUMMY WEBSITE WITH LARAVEL</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certification</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>DUMMY WEBSITE WITH LARAVEL</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Diverse Course Offerings</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>DUMMY WEBSITE WITH LARAVEL</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Industry-Relevant Curriculum</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>DUMMY WEBSITE WITH LARAVEL</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Creative Community</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>DUMMY WEBSITE WITH LARAVEL</p>
                         </div>
                     </div>
                     <a class="btn btn-primary py-3 px-5 mt-2" href="{{ route('about') }}">Read More</a>
@@ -157,7 +157,7 @@
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
-                <h1 class="mb-5">Courses Categories</h1>
+                <h1 class="mb-5">DUMMY WEBSITE WITH LARAVEL</h1>
             </div>
             <div class="row g-3">
                 <div class="col-lg-7 col-md-6">
@@ -166,7 +166,7 @@
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="asset/img/cat-1.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Web Design</h5>
+                                    <h5 class="m-0">DUMMY WEBSITE WITH LARAVEL</h5>
                                     <small class="text-primary">49 Courses</small>
                                 </div>
                             </a>
@@ -175,7 +175,7 @@
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="asset/img/cat-2.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Graphic Design</h5>
+                                    <h5 class="m-0">DUMMY WEBSITE WITH LARAVEL</h5>
                                     <small class="text-primary">49 Courses</small>
                                 </div>
                             </a>
@@ -184,8 +184,8 @@
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="asset/img/cat-3.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Video Editing</h5>
-                                    <small class="text-primary">49 Courses</small>
+                                    <h5 class="m-0">DUMMY WEBSITE WITH LARAVEL</h5>
+                                    <small class="text-primary">DUMMY WEBSITE WITH LARAVEL</small>
                                 </div>
                             </a>
                         </div>
@@ -195,8 +195,8 @@
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
                         <img class="img-fluid position-absolute w-100 h-100" src="asset/img/cat-4.jpg" alt="" style="object-fit: cover;">
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
-                            <h5 class="m-0">Online Marketing</h5>
-                            <small class="text-primary">49 Courses</small>
+                            <h5 class="m-0">DUMMY WEBSITE WITH LARAVEL</h5>
+                            <small class="text-primary">DUMMY WEBSITE WITH LARAVEL</small>
                         </div>
                     </a>
                 </div>
@@ -211,7 +211,7 @@
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
-                <h1 class="mb-5">Popular Courses</h1>
+                <h1 class="mb-5">DUMMY WEBSITE WITH LARAVEL</h1>
             </div>
             <!-- <div class="row g-4 justify-content-center">
                 @foreach($courses as $course)
@@ -260,7 +260,7 @@
                             </div>
                             <div class="text-center p-4 d-flex flex-column flex-grow-1">
                                 <h4 class="fw-bold text-primary">{{ $course->course_name }}</h4>
-                                <p class="text-muted mb-2">Course ID: <span class="fw-semibold">{{ $course->course_id }}</span></p>
+                                <p class="text-muted mb-2">DUMMY WEBSITE WITH LARAVEL: <span class="fw-semibold">{{ $course->course_id }}</span></p>
                                 <p class="text-muted mb-2"><i class="fas fa-clock me-2"></i>{{ $course->duration }} Days</p>
                                 <p class="text-muted mb-2"><i class="fas fa-users me-2"></i>Capacity: {{ $course->capacity }}</p>
                                 <h5 class="text-success fw-bold text-primary">{{ '€' . number_format($course->price, 2) }}</h5>
@@ -297,7 +297,7 @@
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6>
-                <h1 class="mb-5">Expert Instructors</h1>
+                <h1 class="mb-5">DUMMY WEBSITE WITH LARAVEL</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -313,8 +313,8 @@
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">Monica Beckham</h5>
-                            <small>Director</small>
+                            <h5 class="mb-0">DUMMY WEBSITE WITH LARAVEL</h5>
+                            <small>DUMMY WEBSITE WITH LARAVEL</small>
                         </div>
                     </div>
                 </div>
@@ -331,8 +331,8 @@
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">Helen Gabby</h5>
-                            <small>Story Writer</small>
+                            <h5 class="mb-0">DUMMY WEBSITE WITH LARAVEL</h5>
+                            <small>DUMMY WEBSITE WITH LARAVEL</small>
                         </div>
                     </div>
                 </div>
@@ -349,8 +349,8 @@
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">Thomas Joseph</h5>
-                            <small>Cinematographer</small>
+                            <h5 class="mb-0">DUMMY WEBSITE WITH LARAVEL</h5>
+                            <small>DUMMY WEBSITE WITH LARAVEL</small>
                         </div>
                     </div>
                 </div>
@@ -367,8 +367,8 @@
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">Ruby Yanson</h5>
-                            <small>Producer</small>
+                            <h5 class="mb-0">DUMMY WEBSITE WITH LARAVEL</h5>
+                            <small>DUMMY WEBSITE WITH LARAVEL</small>
                         </div>
                     </div>
                 </div>
@@ -382,32 +382,32 @@
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="text-center">
-                <h6 class="section-title bg-white text-center text-primary px-3">Learning Stories</h6>
-                <h1 class="mb-5">Our Students Say!</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">DUMMY WEBSITE WITH LARAVEL</h6>
+                <h1 class="mb-5">DUMMY WEBSITE WITH LARAVEL</h1>
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
                 <div class="testimonial-item text-center">
                     <img class="border rounded-circle p-2 mx-auto mb-3" src="asset/img/review-person.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Emily Watson</h5>
-                    <p>Production Manager</p>
+                    <h5 class="mb-0">DUMMY WEBSITE WITH LARAVEL</h5>
+                    <p>DUMMY WEBSITE WITH LARAVEL</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Reel Craft Academy offered an exceptional learning experience. The classes were well-structured, and the support from the team was outstanding.</p>
+                    <p class="mb-0">DUMMY WEBSITE WITH LARAVEL</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="border rounded-circle p-2 mx-auto mb-3" src="asset/img/review-person.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Oliver Bennett</h5>
+                    <h5 class="mb-0">DUMMY WEBSITE WITH LARAVEL</h5>
                     <p>Film Director</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">My experience at Reel Craft Academy was fantastic! The instructors were knowledgeable and the course content was engaging, making learning a true pleasure.</p>
+                    <p class="mb-0">DUMMY WEBSITE WITH LARAVEL</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="border rounded-circle p-2 mx-auto mb-3" src="asset/img/review-person.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Sophie Parker</h5>
-                    <p>Cinematographer</p>
+                    <h5 class="mb-0">DUMMY WEBSITE WITH LARAVEL</h5>
+                    <p>DUMMY WEBSITE WITH LARAVEL</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">The workshop at Reel Craft Academy was exactly what I needed to boost my confidence. I learned so much in a short time and felt truly inspired.</p>
+                    <p class="mb-0">DUMMY WEBSITE WITH LARAVEL</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
@@ -415,7 +415,7 @@
                     <h5 class="mb-0">James Carter</h5>
                     <p>Screenwriter</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">I had an amazing time at Reel Craft Academy. The hands-on approach and creative environment helped me improve my skills quickly.</p>
+                    <p class="mb-0">DUMMY WEBSITE WITH LARAVEL</p>
                     </div>
                 </div>
             </div>
