@@ -3,7 +3,6 @@ name: Laravel CI/CD with Docker Compose
 on:
   push:
     branches:
-      # - main
       - dev
 
 jobs:
@@ -18,25 +17,45 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
-      - name: Start Docker Compose Services
+      #STEP 1: Create Laravel .env securely
+      - name: Create Laravel .env file
         run: |
-          docker compose up -d --build
-          
+          echo "APP_ENV=\"${{ secrets.APP_ENV }}\"" >> .env
+          echo "APP_KEY=\"${{ secrets.APP_KEY }}\"" >> .env
+          echo "DB_CONNECTION=\"${{ secrets.DB_CONNECTION }}\"" >> .env
+          echo "DB_HOST=\"${{ secrets.DB_HOST }}\"" >> .env
+          echo "DB_PORT=\"${{ secrets.DB_PORT }}\"" >> .env
+          echo "DB_DATABASE=\"${{ secrets.DB_DATABASE }}\"" >> .env
+          echo "DB_USERNAME=\"${{ secrets.DB_USERNAME }}\"" >> .env
+          echo "DB_PASSWORD=\"${{ secrets.DB_PASSWORD }}\"" >> .env
+
+
+      # STEP 2: Start Docker Compose with secrets
+      - name: Start Docker Compose Services
+        env:
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_PORT: ${{ secrets.DB_PORT }}
+          DB_DATABASE: ${{ secrets.DB_DATABASE }}
+          DB_USERNAME: ${{ secrets.DB_USERNAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        run: docker compose up -d --build
+
+      # STEP 3: Wait longer for containers to start
       - name: Wait for all Containers to Be Ready
-        run: sleep 5
-        
+        run: sleep 15
+
       - name: Show Docker Compose Images
         run: docker compose images
 
       - name: Install Dependencies
         run: docker compose exec app composer install
-           
-      - name: Key  generations
+
+      - name: Generate Laravel APP_KEY
         run: docker compose exec app php artisan key:generate
-        
+
       - name: Run Migrations
         run: docker compose exec app php artisan migrate --force
-        
+
       - name: Run Tests
         run: docker compose exec app php artisan test
 
@@ -48,64 +67,23 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          
+
       - name: Set Version
         id: set_version
-        run: echo "VERSION=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV && echo "VERSION=$(date +%Y%m%d%H%M%S)" >> $GITHUB_OUTPUT
+        run: |
+          echo "VERSION=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
+          echo "VERSION=$(date +%Y%m%d%H%M%S)" >> $GITHUB_OUTPUT
 
       - name: Push App Image
         run: |
-          # Tag and push the App image
           docker tag group_1_studio_ghibli_movie_maker-app ${{ secrets.DOCKER_USERNAME }}/app:$VERSION
           docker push ${{ secrets.DOCKER_USERNAME }}/app:$VERSION
-          # Tag and push the Web image
-          docker tag group_1_studio_ghibli_movie_maker-web  ${{ secrets.DOCKER_USERNAME }}/web:$VERSION
+
+          docker tag group_1_studio_ghibli_movie_maker-web ${{ secrets.DOCKER_USERNAME }}/web:$VERSION
           docker push ${{ secrets.DOCKER_USERNAME }}/web:$VERSION
-          # Tag and push the Database image
+
           docker tag group_1_studio_ghibli_movie_maker-database ${{ secrets.DOCKER_USERNAME }}/mysqldb:$VERSION
           docker push ${{ secrets.DOCKER_USERNAME }}/mysqldb:$VERSION
-          # Tag and push the phpMyAdmin image
+
           docker tag group_1_studio_ghibli_movie_maker-pma ${{ secrets.DOCKER_USERNAME }}/phpmyadmin:$VERSION
           docker push ${{ secrets.DOCKER_USERNAME }}/phpmyadmin:$VERSION
-          
-  # Deploy-To-AKS:
-  #   needs: Build-Test-Pushed
-  #   runs-on: ubuntu-latest
-  #   env:
-  #     VERSION: ${{ needs.Build-Test-Pushed.outputs.version }}
-  #   steps:
-  #     - name: Deploy Using Version
-  #       run: echo "Deploying version $VERSION"
-
-  #     - name: Checkout Repository
-  #       uses: actions/checkout@v3
-
-  #     - name: Set up Kubernetes CLI
-  #       uses: azure/setup-kubectl@v3
-
-  #     - name: Configure Kubeconfig
-  #       run: |
-  #        mkdir -p $HOME/.kube  # Ensure .kube directory exists
-  #        echo "${{ secrets.KUBECONFIG }}" | base64 --decode > $HOME/.kube/config
-  #        chmod 600 $HOME/.kube/config  # Secure the config file
-  #     - name: Verify Kubernetes Connection
-  #       run: |
-  #         kubectl cluster-info
-  #         kubectl get nodes
-  #         kubectl get deployments -n default
-  #     - name: Rolling Update Deployments
-  #       run: |
-  #         kubectl set image deployment/app app-container=${{ secrets.DOCKER_USERNAME }}/app:$VERSION
-  #         kubectl set image deployment/web web-container=${{ secrets.DOCKER_USERNAME }}/web:$VERSION
-  #         kubectl set image deployment/database mysql=${{ secrets.DOCKER_USERNAME }}/mysqldb:$VERSION
-  #         kubectl set image deployment/phpmyadmin phpmyadmin=${{ secrets.DOCKER_USERNAME }}/phpmyadmin:$VERSION
-          
-      #- name: Restart Deployments
-       # run: |
-        #  kubectl rollout restart deployment app
-         # kubectl rollout restart deployment web
-          #kubectl rollout restart deployment database
-          #kubectl rollout restart deployment phpmyadmin
-
-      # - name: Verify Deployment Status
-      #   run: kubectl get pods -o wide
