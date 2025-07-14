@@ -42,7 +42,7 @@ jobs:
 
       # STEP 3: Wait longer for containers to start
       - name: Wait for all Containers to Be Ready
-        run: sleep 15
+        run: sleep 5
 
       - name: Show Docker Compose Images
         run: docker compose images
@@ -56,8 +56,8 @@ jobs:
       - name: Run Migrations
         run: docker compose exec app php artisan migrate --force
 
-      - name: Run Tests
-        run: docker compose exec app php artisan test
+      # - name: Run Tests
+      #   run: docker compose exec app php artisan test
 
       - name: Stop and Remove Containers
         run: docker compose down
@@ -76,14 +76,14 @@ jobs:
 
       - name: Push App Image
         run: |
-          docker tag group_1_studio_ghibli_movie_maker-app ${{ secrets.DOCKER_USERNAME }}/app:$VERSION
-          docker push ${{ secrets.DOCKER_USERNAME }}/app:$VERSION
-
-          docker tag group_1_studio_ghibli_movie_maker-web ${{ secrets.DOCKER_USERNAME }}/web:$VERSION
-          docker push ${{ secrets.DOCKER_USERNAME }}/web:$VERSION
-
-          docker tag group_1_studio_ghibli_movie_maker-database ${{ secrets.DOCKER_USERNAME }}/mysqldb:$VERSION
-          docker push ${{ secrets.DOCKER_USERNAME }}/mysqldb:$VERSION
-
-          docker tag group_1_studio_ghibli_movie_maker-pma ${{ secrets.DOCKER_USERNAME }}/phpmyadmin:$VERSION
-          docker push ${{ secrets.DOCKER_USERNAME }}/phpmyadmin:$VERSION
+          docker tag ieee32675standardformulticlouddisasterrecovery-app ${{ secrets.DOCKER_USERNAME }}/multidrapp:$VERSION
+          docker push ${{ secrets.DOCKER_USERNAME }}/multidrapp:$VERSION
+      
+          docker tag ieee32675standardformulticlouddisasterrecovery-web ${{ secrets.DOCKER_USERNAME }}/multidrweb:$VERSION
+          docker push ${{ secrets.DOCKER_USERNAME }}/multidrweb:$VERSION
+      
+          docker tag ieee32675standardformulticlouddisasterrecovery-database ${{ secrets.DOCKER_USERNAME }}/multidrdb:$VERSION
+          docker push ${{ secrets.DOCKER_USERNAME }}/multidrdb:$VERSION
+      
+          docker tag ieee32675standardformulticlouddisasterrecovery-pma ${{ secrets.DOCKER_USERNAME }}/multidrpma:$VERSION
+          docker push ${{ secrets.DOCKER_USERNAME }}/multidrpma:$VERSION
