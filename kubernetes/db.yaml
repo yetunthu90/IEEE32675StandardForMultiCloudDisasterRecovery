@@ -25,7 +25,7 @@ spec:
         - name: MYSQL_PASSWORD
           value: "HelloDublin"
         - name: MYSQL_DATABASE
-          value: "reelcraft"
+          value: "multidr"
         - name: MYSQL_ROOT_HOST
           value: "%" 
         ports:
