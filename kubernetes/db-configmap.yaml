@@ -4,7 +4,7 @@ metadata:
   name: init-sql-config
 data:
   init.sql: |
-    CREATE DATABASE IF NOT EXISTS ReelCraft;
+    CREATE DATABASE IF NOT EXISTS multidr;
     CREATE USER 'mysql'@'%' IDENTIFIED BY 'HelloDublin';
-    GRANT ALL PRIVILEGES ON reelcraft.* TO 'mysql'@'%';
+    GRANT ALL PRIVILEGES ON multidr.* TO 'mysql'@'%';
     FLUSH PRIVILEGES;
