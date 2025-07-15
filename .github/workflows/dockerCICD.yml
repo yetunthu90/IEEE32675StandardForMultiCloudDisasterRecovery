@@ -3,7 +3,7 @@ name: Laravel CI/CD with Docker Compose
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   Application-Build-Test-Pushed:
